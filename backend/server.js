@@ -15,11 +15,18 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-});
+// mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useCreateIndex: true,
+// });
+mongoose.connect("mongodb+srv://rishabh-jain-source:Tushar@99RJ@cluster0.d8zjb.mongodb.net/test?authSource=admin&replicaSet=atlas-dmz1ie-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",{ useNewUrlParser: true,useUnifiedTopology: true,useCreateIndex: true,useFindAndModify:false} )
+.then(()=>{
+  console.log("Connect")
+})
+.catch((err)=>{
+  console.log(err)
+})
 app.use('/api/uploads', uploadRouter);
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
