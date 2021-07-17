@@ -146,9 +146,10 @@ function App() {
           </div>
         </header>
         <aside className={sidebarIsOpen ? 'open' : ''}>
-          <ul className="categories">
+          <div className="products">
+          <ul >
             <li>
-              <strong>Categories</strong>
+              <strong className="sideTitle">Categories</strong>
               <button
                 onClick={() => setSidebarIsOpen(false)}
                 className="close-sidebar"
@@ -163,17 +164,19 @@ function App() {
               <MessageBox variant="danger">{errorCategories}</MessageBox>
             ) : (
               categories.map((c) => (
-                <li key={c}>
+                
                   <Link
                     to={`/search/category/${c}`}
                     onClick={() => setSidebarIsOpen(false)}
                   >
-                    {c}
+                    <li key={c} className="sideCat"> <h4 >{c}</h4></li>
+                    
                   </Link>
-                </li>
+               
               ))
             )}
           </ul>
+          </div>
         </aside>
         <main>
           <Route path="/seller/:id" component={SellerScreen}></Route>

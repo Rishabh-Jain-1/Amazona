@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 //   useUnifiedTopology: true,
 //   useCreateIndex: true,
 // });
-mongoose.connect("mongodb+srv://rishabh-jain-source:Tushar@99RJ@cluster0.d8zjb.mongodb.net/test?authSource=admin&replicaSet=atlas-dmz1ie-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",{ useNewUrlParser: true,useUnifiedTopology: true,useCreateIndex: true,useFindAndModify:false} )
+mongoose.connect("mongodb+srv://rishabh-jain-source:Tushar@99RJ@cluster0.d8zjb.mongodb.net/amazona?authSource=admin&replicaSet=atlas-dmz1ie-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",{ useNewUrlParser: true,useUnifiedTopology: true,useCreateIndex: true,useFindAndModify:false} )
 .then(()=>{
   console.log("Connect")
 })

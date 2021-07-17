@@ -1,3 +1,49 @@
+@media (min-width: 992px){
+.col-lg-4, .col-lg-5 {
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+}
+@media (min-width: 992px){
+.col-lg-4 {
+    width: 33.33333333%;
+}
+}
+@media (min-width: 992px){
+.col-lg-3 {
+    width: 25%;
+}
+}
+@media (min-width: 992px){
+.col-lg-2, .col-lg-3 {
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+}
+
+@media (min-width: 992px){
+.col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+}
+/* .row>* {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)*0.5);
+    padding-left: calc(var(--bs-gutter-x)*0.5);
+    margin-top: var(--bs-gutter-y);
+} */
+@media (min-width: 992px){
+.col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+}
 html {
   font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
   box-sizing: border-box;
@@ -9,7 +55,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f6f6f6!important;
+  background-color: #f6f6f6;
 }
+
 #root {
   height: 100%;
 }
@@ -50,10 +99,14 @@ h2 {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
-a:hover {
+a:hover{
+  opacity: 0.8;
+}
+/* a:hover {
   color: #ff8000;
-}
+} */
 ul {
   padding: 0;
   margin: 0;
@@ -467,3 +520,120 @@ img.large {
 .support-users .unread {
   background-color: #f02020;
 }
+.slider-container {
+  width: 100%;
+  height: 100%;
+  
+  /* Add this */
+  position:fixed;
+  top:0;
+  left:0;
+  
+  }
+  .container{
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .seltQtn {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #e5e5e5;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.products{
+  background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #e5e5e5;
+}
+.pageTitle {
+
+  font-size: 37px;
+  color: #232323;
+  background-color: #ecf7dd;
+  padding: 5px 40px 2px;
+  line-height: 1.2;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+  box-shadow: 0 2px 3px #e5e5e5;
+}
+.sideTitle{
+  font-size: 27px;
+  color: #232323;
+  background-color: #ecf7dd;
+  padding: 5px 40px 2px;
+  line-height: 1.2;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 3px #e5e5e5;
+}
+.sideCat{
+  background: white;
+  font-size: 20px;
+  color: #232323;
+  padding: 5px 40px 2px;
+  padding-bottom: 2px;
+  line-height: 1.2;
+  border-radius: 3px;
+  
+  border-radius: 10px;
+}
+.sideCat:hover{
+  box-shadow: 0 2px 3px #e5e5e5;
+  background: #fefce0;
+  font-size: 24px;
+  font-weight: 600;
+}
+a .sideCat:hover{
+  opacity: 1;
+}
+.cat{
+  background: #fefce0;
+  font-size: 30px;
+  color: #232323;
+  padding: 5px 40px 2px;
+  padding-bottom: 2px;
+  line-height: 1.2;
+  border-radius: 3px;
+  margin-bottom: 4rem;
+  box-shadow: 0 2px 3px #e5e5e5;
+  border-radius: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 400!important;
+}
+.frmBox {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 3px #e5e5e5;
+  display: block;
+  margin:15px
+}
+.frmBox:hover {
+  box-shadow: 0 4px 6px #ccc;
+}
+.backBtn {
+  font-size: 20px;
+  color: #fff;
+  background: #232323;
+  border-radius: 30px;
+  padding: 5px 30px 10px;
+}
+.backBtn:hover{
+  opacity: 0.6;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.d-flex {
+  display: -webkit-flex!important;
+  display: flex!important;
+}
+

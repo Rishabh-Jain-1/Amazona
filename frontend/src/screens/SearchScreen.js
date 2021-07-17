@@ -9,6 +9,7 @@ import Rating from '../components/Rating';
 import { prices, ratings } from '../utils';
 
 export default function SearchScreen(props) {
+  console.log("search",props)
   const {
     name = 'all',
     category = 'all',
@@ -153,7 +154,10 @@ export default function SearchScreen(props) {
               )}
               <div className="row center">
                 {products.map((product) => (
+                  <>
+                  {console.log("ALL PRODUCTS",product)}
                   <Product key={product._id} product={product}></Product>
+                  </>
                 ))}
               </div>
               <div className="row center pagination">
